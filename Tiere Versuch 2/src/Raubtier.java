@@ -2,8 +2,8 @@ public class Raubtier extends Tier {
     
     String fellfarbe;
 
-    public Raubtier(String name, int groesse, String fellfarbe){
-        super(name, groesse);
+    public Raubtier(String name, int groesse, boolean essbar, String fellfarbe){
+        super(name, groesse, essbar);
         setFellfarbe(fellfarbe);
     }
 
@@ -13,10 +13,9 @@ public class Raubtier extends Tier {
     public String getFellfarbe() {
         return fellfarbe;
     }
-
     
     public void werBinIch(){
-        System.out.println(getName() + " " + getGroesse() + " " + getFellfarbe());
+        System.out.println(getName() + " " + getGroesse() + " " +  getEssbar() + " " + getFellfarbe());
     }
 
 }

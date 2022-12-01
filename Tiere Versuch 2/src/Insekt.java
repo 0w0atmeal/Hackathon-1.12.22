@@ -2,8 +2,8 @@ public class Insekt extends Tier{
     
     int fluegel;
 
-    public Insekt(String name, int groesse, int anzahlFluegel){
-        super(name, groesse);
+    public Insekt(String name, int groesse, boolean essbar, int anzahlFluegel){
+        super(name, groesse, essbar);
         setFluegel(anzahlFluegel);
     }
     
@@ -15,6 +15,6 @@ public class Insekt extends Tier{
     }
 
     public void werBinIch(){
-        System.out.println(getName() + " " + getGroesse() + " " + getFluegel());    
+        System.out.println(getName() + " " + getGroesse() + " " + getEssbar() + " " + getFluegel());    
     }
 }

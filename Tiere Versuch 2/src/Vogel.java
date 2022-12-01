@@ -1,11 +1,10 @@
 public class Vogel extends Tier {
     
-    
     String federfarbe;
 
-    public Vogel(String name, int groesse, String federfaString){
-        super(name, groesse);
-        setFederfarbe(federfaString);
+    public Vogel(String name, int groesse, Boolean essbar, String federfarbe){
+        super(name, groesse, essbar);
+        setFederfarbe(federfarbe);
     }
 
     public void setFederfarbe(String federfarbe) {
@@ -16,6 +15,7 @@ public class Vogel extends Tier {
     }
 
     public void werBinIch(){
-        System.out.println(getName() + " " + getGroesse() + " " + getFederfarbe());
+        System.out.println(getName() + " " + getGroesse() + " " + getEssbar() + " " + getFederfarbe());
     }
+   
 }
