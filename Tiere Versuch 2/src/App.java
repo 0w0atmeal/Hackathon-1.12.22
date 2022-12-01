@@ -6,7 +6,7 @@ public class App {
     public static void main(String[] args) throws Exception {
         setTiere(new ArrayList<Tier>());
         createAnimals();
-        aendereEssbar(true);
+        aendereEssbar(true); //Methode wird ausgeführt
         zeigeDaten();   
         aendereEssbar(false);
         zeigeDaten();
@@ -29,7 +29,7 @@ public class App {
     }
 
     public static void setTiere(ArrayList<Tier> tiere) {
-        App.tiere = tiere;
+        App.tiere = tiere; //Verweis auf die Klasse App (wie this.)
     }
 
     public static ArrayList<Tier> getTiere() {
